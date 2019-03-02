@@ -6,10 +6,29 @@
     </head>
 
     <body>
+
         <div class="header">
+            
+            
+            <img src="haris.png" style="border-radius: 100%; box-shadow: 0 0 15px black;">
             <p>Haris Duratovic</p>
+
+        </div>
+
+        <div class="sub-header">
         </div>
         
-        <img src="haris.png" style="border-radius: 100%; box-shadow: 0 0 15px black;">
+        <style>
+                img { cursor: none; }
+            </style>
+            <script>
+            document.addEventListener("mousemove", ev => {
+                let e = document.querySelector("img");
+                let s = e.style;
+                s.position = "absolute";
+                s.top  = ev.clientY - e.offsetHeight / 2;
+                s.left = ev.clientX - e.offsetWidth  / 2;
+            });
+            </script>
     </body>
 </html>
