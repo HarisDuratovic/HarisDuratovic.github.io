@@ -9,6 +9,9 @@ body {
 }
 
 html {
+    background: url("goddem.jpg") no-repeat fixed;
+    background-size: cover;
+    background-position: center;
 }
 
 
