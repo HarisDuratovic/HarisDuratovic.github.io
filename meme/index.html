@@ -1,14 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <!-- basic.html -->
-    <title>basic.html</title>
-    <meta charset="UTF-8" />
+    <title>Haris Duratovic</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <meta
+      property="title"
+      content="Haris Duratovic - Just the best darned thing ever!"
+    />
+    <meta
+      property="og:title"
+      content="Haris Duratovic - Just the best darned thing ever!"
+    />
+    <meta property="og:url" content="https://duratovic.dev/" />
+    <meta property="og:image" content="haris.png" />
   </head>
+
   <body>
-    <h1>Level One Headline</h1>
-    <p>
-      This is a paragraph. Note that the text is automatically wrapped.
-    </p>
+    <div class="bg-image"></div>
+
+    <div class="header">
+      <img
+        src="haris.png"
+        style="border-radius: 100%; box-shadow: 0 0 15px black;"
+      />
+      <p>Haris Duratovic</p>
+    </div>
+
+    <div class="sub-header"></div>
+
+    <style>
+      img {
+        cursor: none;
+      }
+    </style>
+    <script>
+      document.addEventListener("mousemove", (ev) => {
+        let e = document.querySelector("img");
+        let s = e.style;
+        s.position = "absolute";
+        s.top = ev.clientY - e.offsetHeight / 2;
+        s.left = ev.clientX - e.offsetWidth / 2;
+      });
+    </script>
   </body>
 </html>
