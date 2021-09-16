@@ -1,0 +1,52 @@
+.About-me {
+    display: flex;
+    justify-content: center;
+}
+
+.About-me-toggle {
+    display: flex;
+    padding:1em 3em;
+    background-color: rgba(250, 235, 215, 0);
+    flex-direction: column;
+}
+
+.About-transition { 
+    transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.About-text {
+    color: #fff;
+}
+
+.About-text a {
+    color: inherit;
+    text-decoration: none;
+    padding:1em 1em;
+}
+
+.About-text a:hover {
+    color: #8ff;
+    text-decoration: none;
+}
+
+
+@keyframes inAnimation {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  
+  @keyframes outAnimation {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }

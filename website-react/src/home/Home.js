@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState } from 'react';
-import Counter from '../common/components/Counter';
 import AboutMe from '../common/components/AboutMe';
 import '../common/css/Home.css';
 
@@ -16,13 +15,21 @@ function Home() {
     
     return (
         <div>
-            <div className="Home-header">
+            <div id="Header">
+                <div className="Home-header">
+                
                 <h1>
                     {getName()}
                 </h1>
+                </div>
+                
+                <div className="Home-header-bottom">
+                    <AboutMe />
+                </div>
+            </div>
+            <div>
                 <AboutMe />
             </div>
-            <Counter />
         </div>
     );
 };
