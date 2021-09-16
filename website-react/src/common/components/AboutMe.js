@@ -31,7 +31,7 @@ function AboutMe() {
         
         if (toggled) {
             return <span style={toggled ? mountedStyle : unmountedStyle} className='About-transition About-text' onAnimationEnd={() => {}}>
-                <GitHub/> - <LinkedIn/> - <ArtStation/>
+                <GitHub/>-<LinkedIn/>-<ArtStation/>
             </span>
         } else {
             return <span style={!toggled ? mountedStyle : unmountedStyle} className='About-transition About-text'>
