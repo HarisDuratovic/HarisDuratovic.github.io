@@ -16,7 +16,7 @@
 
 .About-text {
     color: #ccc;
-    font-size: 3vh;
+    font-size: 2em;
     font-weight: 300;
     text-align: center;
 
@@ -45,12 +45,12 @@
     }
   }
   
-  @keyframes outAnimation {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-      visibility: hidden;
-    }
+@keyframes outAnimation {
+  0% {
+    opacity: 1;
   }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
