@@ -12,10 +12,7 @@ const ImageText = ({ children, image, ...props }) => {
         WebkitTextFillColor: "transparent",
         color: "#ddd",
         WebkitFontSmoothing: "antialiased",
-        shadowColor: '#470000',
-        shadowOffset: {width: 0, height: 1},
-        shadowOpacity: 0.2,
-        elevation: 1
+        textShadow: "rgba(0,0,0,0.2) 0px 0 2px",
     }
 
     return (

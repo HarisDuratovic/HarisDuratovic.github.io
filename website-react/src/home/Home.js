@@ -49,9 +49,6 @@ function Home() {
                 alt="Canvas Logo"
                 />
             </div>
-            <div>
-                <AboutMe />
-            </div>
         </div>
     );
 };
