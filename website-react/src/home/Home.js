@@ -34,13 +34,13 @@ function Home() {
             style={{ 
                 backgroundImage: homeBg
               }}>
-                <div className="Home-header">
+                <div className="is-narrow-mobile Home-header">
                     <h2>
                         {headerName()}
                     </h2>
                 </div>
                 
-                <div className="Home-header-bottom">
+                <div className="is-one-fifth Home-header-bottom is-primary">
                     <AboutMe />
                 </div>
                 <img 
